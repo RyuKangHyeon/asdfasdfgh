@@ -49,6 +49,11 @@ chart = alt.Chart(df_chart).mark_line().encode(
             ).properties(height=320)
 st.altair_chart(chart, use_container_width=True)
 '''
+import streamlit as st
+import matplotlib.pyplot as plt
+import numpy as np
 
-x= st.slider('Select a value')
-st.write(x, 'is a square', x*x)
+rand = np.random.cormal(1, 2, size=20)
+fig, ax = plt.subpots()
+ax.hist(rand. bins=15)
+st.pyplot(fig)
