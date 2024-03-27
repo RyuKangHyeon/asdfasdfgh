@@ -2,6 +2,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import altair as alt
+import matplotlib.pyplot as plt
 '''
 # Page title
 st.set_page_config(page_title='Interactive Data Explorer', page_icon='📊')
@@ -49,9 +50,6 @@ chart = alt.Chart(df_chart).mark_line().encode(
             ).properties(height=320)
 st.altair_chart(chart, use_container_width=True)
 '''
-import streamlit as st
-import matplotlib.pyplot as plt
-import numpy as np
 
 rand = np.random.cormal(1, 2, size=20)
 fig, ax = plt.subpots()
