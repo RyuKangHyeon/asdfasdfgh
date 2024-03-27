@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import altair as alt
-
+'''
 # Page title
 st.set_page_config(page_title='Interactive Data Explorer', page_icon='📊')
 st.title('📊 Interactive Data Explorer')
@@ -48,3 +48,7 @@ chart = alt.Chart(df_chart).mark_line().encode(
             color='genre:N'
             ).properties(height=320)
 st.altair_chart(chart, use_container_width=True)
+'''
+
+x= st.slider('Select a value')
+st.write(x, 'is a square', x*x)
