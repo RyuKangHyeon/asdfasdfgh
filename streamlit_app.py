@@ -55,5 +55,5 @@ import numpy as np
 
 rand = np.random.cormal(1, 2, size=20)
 fig, ax = plt.subpots()
-ax.hist(rand. bins=15)
+ax.hist(rand, bins=15)
 st.pyplot(fig)
