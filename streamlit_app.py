@@ -1,9 +1,8 @@
 import streamlit as st
 import numpy as np
-import matplotlib.pyplot as plt
+from matplotlib import pyplot as plt
 
-
-rand = np.random.cormal(1, 2, size=20)
+rand = np.random.normal(1, 2, size=20)
 fig, ax = plt.subpots()
 ax.hist(rand, bins=15)
 st.pyplot(fig)
